@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="utf-8" />
+
+<title>WapaMapaBingBong</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Mapbox JS -->
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css" rel="stylesheet" />
+
+<!-- Bootstrap CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style>
+	body { margin: 0; padding: 0; }
+	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+
+</head>
+<body>
+<div id="map"></div>
+
+<!-- Map -->
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoibWFwamltMDkiLCJhIjoiNzRId1YtNCJ9.fvr7auc8mRE2wk2LDgnwXQ';
+  var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/mapjim09/ckivc03op3pah19szwfnwl5ak', //stylesheet location
+      bearing: -23.20,
+      center: [108.54815, 13.68350], // starting position
+      zoom: 5,// starting zoom
+      pitch: 55.5,container: 'map',
+});
+</script>
+
+<!-- Navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" <b>WapaMapaBingBong</b></a>
+          <p>
+            <i>7th Century Asia</i>
+          </p>
+        </div>
+      </div>
+   	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
